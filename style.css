@@ -1,130 +1,181 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(255, 255, 255);
-}
+/* style.css */
 
-/* Estilo da navegação */
-nav {
-    width: 100%;
-    background-color: rgb(255, 255, 255);
-}
-
-.redes-link{
-    margin-right: 2%;
-    margin-top: -20px;
-    width: 30px;
-}
-
-.navbar-brand {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+body, html {
     height: 100%;
-    width: 100%;
+    margin: 0;
 }
 
-ul {
-    list-style-type: none;
-    width: 100%;
-    text-align: center; /* Centralizar os itens da lista */
-}
-
-li {
-    display: inline;
+.navbar-brand{
     margin-left: 5px;
-    margin-right: 10%;
 }
 
-a {
-    text-decoration: none;
-    color: rgb(56, 182, 255);
+.parallax-container {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: none;
+    position: relative;
 }
 
-/* Estilo do conteúdo */
-#container {
-    background-color: rgb(255, 255, 255);
-    width: 80%;
-    margin: auto;
-}
-
-
-h5{
-    color: rgb(56, 182, 255);
-    font-weight: bold;
-}
-#mulher {
-    width: 100%;
-    background-color: rgb(56, 182, 255);
+.parallax-image {
+    height: 100vh;
     background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
 
-#intro{
-    width: 100%;
-    height: 100vh; /* Define a altura da div como a altura da viewport */
-    background-image: url('imagens/back2.png'); /* Substitua 'sua-imagem.jpg' pelo caminho da sua imagem */
-    background-size: cover; /* Ajusta o tamanho da imagem para cobrir completamente a div */
-    background-position: center; /* Centraliza a imagem na div */
+.redes-link{
+    margin-right: 20%;
+    margin-left: 5px;
 }
 
-#endereco{
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.foto,
-.foto2,
-.foto3 {
-    margin-top: 15px;
-    max-width: 80%;
-}
-
-/* Rodapé */
-footer {
-    background-color: rgb(56, 182, 255);
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin: auto;
-}
-
-.copy {
-    
-    color: rgb(255, 255, 255);
-}
-
-#redes {
-    width: 200px;
-    height: 30px;
-    margin-left: 80%;
-    margin-top: -40px;
-}
-
-p {
-    max-width: 100%;
-    font-size: large;
-    text-align: justify;
-    padding-top: 20px;
-    color: rgb(56, 182, 255);
-}
-
-.p-direito,
-.p-esquerdo1,
-.p-esquerdo {
-    float: left;
-    margin-top: 5%;
-    margin-right: 10%;
-    margin-left: 1%;
-    display: block;
+.redes-link2{
+    margin-left: -20px;
 }
 
 i{
-    margin-left: 2%;
-    margin-bottom: -30px;
-    width: 30px;
-    color: rgb(255, 255, 255);
+    color: rgb(56, 182, 255);
+}
+
+#image1 {
+    background-image: url('imagens/back1sf.png'); /* Substitua com o caminho da sua imagem */
+    
+}
+
+#mao{
+    margin-right: -5px;
+    max-width: 80%;
+    max-height: 80%;
+    margin-top: 4%;
+}
+
+/* Aumenta a imagem em 1.2 vezes no hover */
+.img-zoom:hover {
+    transform: scale(1.2);
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+
+#endereco{
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 9%;
+    margin-right: -30px;
+}
+
+#image2 {
+    background-image: url('imagens/back2sf.png');
+}
+
+#image3 {
+    background-image: url('imagens/back3sf.png');
+}
+
+#entrega{
+    margin-right: -5%;
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 50px;
 
 }
 
+#image4 {
+    background-image: url('imagens/back4sf.png');
+}
+
+#redes{
+    max-width: 70%;
+    max-height: 70%;
+    margin-top: 9%;
+    margin-right: -30px; 
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.redes2{
+    color: white;
+    width: 40px;
+}
+
+#redes2{
+    margin-top: 35%;
+    margin-right: 39%;
+}
+
+@media (max-width: 1400px) {
+    .parallax-image {
+        background-attachment: scroll;
+        height: 70vh;
+    }
+
+    #entrega{
+        max-width: 65%;
+        max-height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 1035px) {
+    .parallax-image {
+        background-attachment: scroll;
+        height: 60vh;
+    }
+
+    #entrega{
+        max-width: 65%;
+        max-height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 834px) {
+    .parallax-image {
+        background-attachment: scroll;
+        height: 45vh;
+    }
+
+    #entrega{
+        max-width: 65%;
+        max-height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 678px) {
+    .parallax-image {
+        background-attachment: scroll;
+        height: 30vh;
+    }
+
+    #entrega{
+        max-width: 65%;
+        max-height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+}
+
+@media (max-width: 450px) {
+    .parallax-image {
+        background-attachment: scroll;
+        height: 27vh;
+    }
+
+    #entrega{
+        max-width: 65%;
+        max-height: 65%;
+        margin-top: 15%;
+        margin-right: 3%;
+    }
+
+    #redes2{
+        margin-top: 43%;
+        margin-right: 20%;
+    }
+}
